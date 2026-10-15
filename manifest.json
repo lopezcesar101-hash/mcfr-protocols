@@ -5,7 +5,7 @@
   "display": "standalone",
   "background_color": "#faf7f2",
   "theme_color": "#9d1c1c",
-  "description": "Fast lookup for Monroe County Fire Rescue EMS Protocols 2026.",
+  "description": "Fast lookup for Monroe County Fire Rescue EMS Protocols 2025.",
   "icons": [
     { "src": "icon-192.png", "sizes": "192x192", "type": "image/png" },
     { "src": "icon-512.png", "sizes": "512x512", "type": "image/png" }
