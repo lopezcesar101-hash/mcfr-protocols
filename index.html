@@ -4,6 +4,13 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <title>MCFR Protocols — Fast Lookup</title>
+<link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#9d1c1c">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="MCFR Protocols">
 <style>
   :root{ --red:#9d1c1c; --red-dark:#7a1414; --ink:#1c1a17; --muted:#6f6a61; --line:#e4ded4; --bg:#faf7f2; --card:#ffffff; }
   *{ box-sizing:border-box; -webkit-tap-highlight-color:transparent; }
@@ -125,6 +132,7 @@ document.getElementById("back").onclick=()=>{
 $q.addEventListener("input", render);
 $clear.onclick=()=>{ $q.value=""; render(); $q.focus(); };
 render();
+if ("serviceWorker" in navigator) { navigator.serviceWorker.register("sw.js"); }
 </script>
 </body>
 </html>
